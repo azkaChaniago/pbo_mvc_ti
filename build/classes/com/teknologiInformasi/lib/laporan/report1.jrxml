@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7dee6388-7a7e-41eb-8fad-88feaf5f06c8">
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     consumers.`con_id` AS consumers_con_id,
+     consumers.`con_name` AS consumers_con_name,
+     consumers.`con_phone` AS consumers_con_phone,
+     consumers.`con_address` AS consumers_con_address,
+     consumers.`con_notes` AS consumers_con_notes
+FROM
+     `consumers` consumers]]>
+	</queryString>
+	<field name="consumers_con_id" class="java.lang.String"/>
+	<field name="consumers_con_name" class="java.lang.String"/>
+	<field name="consumers_con_phone" class="java.lang.String"/>
+	<field name="consumers_con_address" class="java.lang.String"/>
+	<field name="consumers_con_notes" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

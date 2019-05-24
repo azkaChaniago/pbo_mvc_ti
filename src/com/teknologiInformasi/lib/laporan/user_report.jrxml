@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="11f124f6-465a-442b-9ed9-0318eacb870d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#FAEBD7">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFE4BF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="c4d8f010-c72b-4e68-ad55-7d8e842e3825"/>
+	<subDataset name="user_list" uuid="63c7c6bc-1674-40cd-bd9c-263fa971e975">
+		<queryString language="SQL">
+			<![CDATA[SELECT
+     users.`user_id` AS users_user_id,
+     users.`user_name` AS users_user_name,
+     users.`user_password` AS users_user_password,
+     users.`user_address` AS users_user_address,
+     users.`user_phone` AS users_user_phone,
+     users.`user_auth` AS users_user_auth
+FROM
+     `users` users]]>
+		</queryString>
+		<field name="users_user_id" class="java.lang.String"/>
+		<field name="users_user_name" class="java.lang.String"/>
+		<field name="users_user_password" class="java.lang.String"/>
+		<field name="users_user_address" class="java.lang.String"/>
+		<field name="users_user_phone" class="java.lang.String"/>
+		<field name="users_user_auth" class="java.lang.String"/>
+		<group name="users_user_id">
+			<groupExpression><![CDATA[$F{users_user_id}]]></groupExpression>
+		</group>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     users.`user_id` AS users_user_id,
+     users.`user_name` AS users_user_name,
+     users.`user_password` AS users_user_password,
+     users.`user_address` AS users_user_address,
+     users.`user_phone` AS users_user_phone,
+     users.`user_auth` AS users_user_auth
+FROM
+     `users` users]]>
+	</queryString>
+	<field name="users_user_id" class="java.lang.String"/>
+	<field name="users_user_name" class="java.lang.String"/>
+	<field name="users_user_password" class="java.lang.String"/>
+	<field name="users_user_address" class="java.lang.String"/>
+	<field name="users_user_phone" class="java.lang.String"/>
+	<field name="users_user_auth" class="java.lang.String"/>
+	<group name="users_user_id">
+		<groupExpression><![CDATA[$F{users_user_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="7" width="100" height="20" uuid="488ae9ff-0a14-44a4-b210-d7412de68cf8"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="7" width="100" height="20" uuid="08a70900-cda3-4dfa-8138-72d9fc25f4f2"/>
+				<text><![CDATA[ID User]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="7" width="100" height="20" uuid="4a0e3084-b330-4e04-866d-b36cea999b3b"/>
+				<text><![CDATA[Username
+]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="0" y="0" width="555" height="27" uuid="fc6576df-5a0f-4e07-bbe8-fe5ff341167d"/>
+				<staticText>
+					<reportElement x="300" y="7" width="100" height="20" uuid="b7251bba-99d2-4708-a610-d148bedbeaea"/>
+					<text><![CDATA[users_user_phone]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20" uuid="2b8b29e9-96ce-4ced-92ab-ee2b31afa8d0"/>
+				<textFieldExpression><![CDATA[$F{users_user_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="563f899c-d8c3-4748-a996-2f75f5fe9638"/>
+				<textFieldExpression><![CDATA[$F{users_user_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="ebd57442-ea24-4922-bec8-b0c14273e6b4"/>
+				<textFieldExpression><![CDATA[$F{users_user_name}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="0" y="0" width="555" height="24" uuid="a00e4551-f5dc-4b9b-afdf-62b8314fb08b"/>
+				<textField>
+					<reportElement x="300" y="0" width="100" height="20" uuid="83c710dd-aa46-4d71-a1aa-08840af56af8"/>
+					<textFieldExpression><![CDATA[$F{users_user_phone}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement x="39" y="3" width="100" height="1" uuid="329b5366-65d3-4103-9490-3f3f38a0d9de"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
