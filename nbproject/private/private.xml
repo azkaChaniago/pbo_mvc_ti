@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/TugasAkhir/src/com/teknologiInformasi/mvc/view/Main.java</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/TugasAkhir/src/com/teknologiInformasi/lib/laporan/user_report.jrxml</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/TugasAkhir/src/com/teknologiInformasi/lib/koneksi/Koneksi.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/TugasAkhir/src/com/teknologiInformasi/mvc/view/DialogCariBarang.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/TugasAkhir/src/com/teknologiInformasi/mvc/view/FormLogin.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/TugasAkhir/src/com/teknologiInformasi/mvc/controlSQL/UserSQL.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/TugasAkhir/src/com/teknologiInformasi/lib/koneksi/Configuration.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/TugasAkhir/src/com/teknologiInformasi/mvc/model/User_model.java</file>
             <file>file:/C:/Users/HP/Documents/NetBeansProjects/TugasAkhir/src/com/teknologiInformasi/mvc/view/MenuUtama.java</file>
         </group>
     </open-files>

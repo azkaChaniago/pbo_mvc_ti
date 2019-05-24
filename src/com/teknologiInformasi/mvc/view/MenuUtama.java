@@ -325,6 +325,14 @@ public class MenuUtama extends javax.swing.JFrame {
         this.penggunaMenuItem = pengguna;
     }
     
+    public javax.swing.JMenu getMasterMenu() {
+        return this.masterMenu;
+    }
+    
+    public void setMasterMenu(javax.swing.JMenu master) {
+        this.masterMenu = master;
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu aboutprogramMenu;
     private javax.swing.JMenuItem barangMenuItem;

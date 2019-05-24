@@ -190,8 +190,8 @@ public class FormLogin extends javax.swing.JFrame {
             menuUtama.setVisible(true);             
             menuUtama.getDataPenggunaLabel().setText(ctp.data_login);             
             if(UserSQL.level.equals("Kasir")){                 
-                menuUtama.getDesktop().setEnabled(false);
-                menuUtama.getPenggunaMenuItem().setEnabled(false);
+//                menuUtama.getDesktop().setEnabled(false);
+                menuUtama.getMasterMenu().setEnabled(false);
             }             
             dispose();         
         }else {             
